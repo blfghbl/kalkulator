@@ -26,10 +26,11 @@ $(document).ready(function () {
     `);
         // Находим кнопку удаления внутри элемента списка и добавляем обработчиксобытия
         listItem.find('.remove-button').on('click', function () {
-            $("#launcher").on("click", function () {
-                $("#window").modal("show");
+            $("#window").modal("show");
+            $("#delete").on("click", function () {
+                listItem.remove();
+                $("#window").modal("hide");
             });
-            listItem.remove();
         });
         // Добавляем элемент в список и очищаем поле ввода
         taskList.append(listItem);

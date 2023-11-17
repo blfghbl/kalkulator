@@ -7,31 +7,31 @@ let inputtwo = document.getElementById("numbertwo");
 let output = document.getElementById("result");
 
 function printsum() {
-    let inputone = Number(inputone.value); 
-    let inputtwo = Number(inputtwo.value);
-    let result = inputone + inputtwo ;
+    inputone = Number(inputone.value);
+    inputtwo = Number(inputtwo.value);
+    let result = inputone + inputtwo;
     output.value = result;
-    }
-    function printmin() {
-        let inputone = Number(inputone.value); 
-        let inputtwo = Number(inputtwo.value);
-        let result = inputone - inputtwo ;
-        output.value = result;
-        }
-        function printumn() {
-            let inputone = Number(inputone.value); 
-            let inputtwo = Number(inputtwo.value);
-            let result = inputone * inputtwo ;
-            output.value = result;
-            }
-            function printdel() {
-                let inputone = Number(inputone.value); 
-                let inputtwo = Number(inputtwo.value);
-                let result = inputone / inputtwo ;
-                output.value = result;
-                }
+}
+function printmin() {
+    inputone = Number(inputone.value);
+    inputtwo = Number(inputtwo.value);
+    let result = inputone - inputtwo;
+    output.value = result;
+}
+function printumn() {
+    inputone = Number(inputone.value);
+    inputtwo = Number(inputtwo.value);
+    let result = inputone * inputtwo;
+    output.value = result;
+}
+function printdel() {
+    inputone = Number(inputone.value);
+    inputtwo = Number(inputtwo.value);
+    let result = inputone / inputtwo;
+    output.value = result;
+}
 
-    buttonsum.addEventListener("click", printsum);
-    buttonsum.addEventListener("click", printmin);
-    buttonsum.addEventListener("click", printumn);
-    buttonsum.addEventListener("click", printdel);
+buttonsum.addEventListener("click", printsum);
+buttonmin.addEventListener("click", printmin);
+buttonumn.addEventListener("click", printumn);
+buttondel.addEventListener("click", printdel);
